@@ -61,13 +61,15 @@ Statyczna biblioteka liburing.
  
 %{__make} \
 	CFLAGS="%{rpmcflags}" \
-	LDFLAGS="%{rpmldflags}"
+	LDFLAGS="%{rpmldflags}" \
+	V=1
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	V=1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
