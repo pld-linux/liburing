@@ -50,6 +50,7 @@ Statyczna biblioteka liburing.
 %package ffi
 Summary:	io_uring FFI library
 Summary(pl.UTF-8):	Biblioteka FFI dla io_uring
+Group:		Libraries
 
 %description ffi
 io_uring FFI library.
@@ -62,6 +63,7 @@ Summary:	Development files for liburing-ffi
 Summary(pl.UTF-8):	Pliki programistyczne do biblioteki liburing-ffi
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
+Requires:	%{name}-ffi = %{version}-%{release}
 
 %description ffi-devel
 Development files for liburing-ffi.
