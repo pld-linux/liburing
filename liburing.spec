@@ -1,12 +1,12 @@
 Summary:	Linux-native io_uring I/O access library
 Summary(pl.UTF-8):	Biblioteka natywnego dla Linuksa dostępu we/wy io_uring
 Name:		liburing
-Version:	2.4
+Version:	2.5
 Release:	1
 License:	LGPL v2+ or MIT
 Group:		Libraries
 Source0:	https://brick.kernel.dk/snaps/%{name}-%{version}.tar.bz2
-# Source0-md5:	7d0965d785f80fa3b191c2eba554a207
+# Source0-md5:	f11218f6f2874250649ba1d908373e81
 URL:		https://git.kernel.dk/cgit/liburing/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
