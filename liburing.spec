@@ -8,6 +8,7 @@ Group:		Libraries
 Source0:	https://brick.kernel.dk/snaps/%{name}-%{version}.tar.bz2
 # Source0-md5:	f11218f6f2874250649ba1d908373e81
 URL:		https://git.kernel.dk/cgit/liburing/
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		specflags	-fomit-frame-pointer -fno-stack-protector
@@ -95,7 +96,7 @@ Statyczna biblioteka liburing-ffi.
 	--libdevdir=%{_libdir} \
 	--mandir=%{_mandir} \
 	--includedir=%{_includedir}
- 
+
 %{__make} \
 	CFLAGS="%{rpmcflags}" \
 	LDFLAGS="%{rpmldflags}" \
