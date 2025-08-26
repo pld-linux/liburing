@@ -1,12 +1,12 @@
 Summary:	Linux-native io_uring I/O access library
 Summary(pl.UTF-8):	Biblioteka natywnego dla Linuksa dostępu we/wy io_uring
 Name:		liburing
-Version:	2.11
+Version:	2.12
 Release:	1
 License:	LGPL v2+ or MIT
 Group:		Libraries
 Source0:	https://brick.kernel.dk/snaps/%{name}-%{version}.tar.bz2
-# Source0-md5:	e54526cbf2ba864f8026801d55c4f225
+# Source0-md5:	a74f1a25be908ebfa63a859714d5881c
 URL:		https://git.kernel.dk/cgit/liburing/
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
