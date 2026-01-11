@@ -27,7 +27,7 @@ jak i O_DIRECT.
 Summary:	Header files and development documentation for liburing
 Summary(pl.UTF-8):	Pliki nagłówkowe i dokumentacja programistyczna do biblioteki liburing
 Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name}%{?_isa} = %{version}-%{release}
 
 %description devel
 Development files for Linux-native io_uring I/O access library.
@@ -40,7 +40,7 @@ io_uring.
 Summary:	Static liburing library
 Summary(pl.UTF-8):	Statyczna biblioteka liburing
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}-%{release}
+Requires:	%{name}-devel%{?_isa} = %{version}-%{release}
 
 %description static
 Static liburing library.
@@ -63,8 +63,8 @@ Biblioteka FFI dla io_uring.
 Summary:	Development files for liburing-ffi
 Summary(pl.UTF-8):	Pliki programistyczne do biblioteki liburing-ffi
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}-%{release}
-Requires:	%{name}-ffi = %{version}-%{release}
+Requires:	%{name}-devel%{?_isa} = %{version}-%{release}
+Requires:	%{name}-ffi%{?_isa} = %{version}-%{release}
 
 %description ffi-devel
 Development files for liburing-ffi.
@@ -76,7 +76,7 @@ Pliki programistyczne do biblioteki liburing-ffi.
 Summary:	Static liburing-ffi library
 Summary(pl.UTF-8):	Statyczna biblioteka liburing-ffi
 Group:		Development/Libraries
-Requires:	%{name}-ffi-devel = %{version}-%{release}
+Requires:	%{name}-ffi-devel%{?_isa} = %{version}-%{release}
 
 %description ffi-static
 Static liburing-ffi library.
