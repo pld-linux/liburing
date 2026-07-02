@@ -100,7 +100,8 @@ Statyczna biblioteka liburing-ffi.
 %{__make} \
 	CFLAGS="%{rpmcflags}" \
 	LDFLAGS="%{rpmldflags}" \
-	V=1
+	V=1 \
+	bpf_toolchain=n
 
 %install
 rm -rf $RPM_BUILD_ROOT
