@@ -122,12 +122,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE README
-%attr(755,root,root) %{_libdir}/liburing.so.*.*
-%attr(755,root,root) %ghost %{_libdir}/liburing.so.2
+%{_libdir}/liburing.so.*.*
+%ghost %{_libdir}/liburing.so.2
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liburing.so
+%{_libdir}/liburing.so
 %{_includedir}/liburing
 %{_includedir}/liburing.h
 %{_pkgconfigdir}/liburing.pc
@@ -143,12 +143,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files ffi
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liburing-ffi.so.*.*
-%attr(755,root,root) %ghost %{_libdir}/liburing-ffi.so.2
+%{_libdir}/liburing-ffi.so.*.*
+%ghost %{_libdir}/liburing-ffi.so.2
 
 %files ffi-devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/liburing-ffi.so
+%{_libdir}/liburing-ffi.so
 %{_pkgconfigdir}/liburing-ffi.pc
 
 %files ffi-static
